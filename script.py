@@ -22,7 +22,7 @@ client = TelegramClient('sessions/session_master', api_id, api_hash).start(bot_t
 async def start(event):
     sender = await event.get_sender()
     SENDER = sender.id
-    text = "Docker Bot 🤖 ready\nHello! I'm answering you from Docker!"
+    text = "Docker Bot 🤖 ready\nHello! I'm answering you from Docker Ora parlo italiano!"
     await client.send_message(SENDER, text, parse_mode="HTML")
 
 
