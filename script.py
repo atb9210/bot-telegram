@@ -37,7 +37,7 @@ async def time(event):
     await client.send_message(SENDER, text, parse_mode="HTML")
 
 
-# Define the /testiamo command
+# Define the /testiamo command samir 
 @client.on(events.NewMessage(pattern='/(?i)samir')) 
 async def samir(event):
     sender = await event.get_sender()
