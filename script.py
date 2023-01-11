@@ -46,6 +46,15 @@ async def samir(event):
     await client.send_message(SENDER, text, parse_mode="HTML")
 
 
+# Andrew Tate Commento Matrix
+@client.on(events.NewMessage(pattern='/(?i)topg')) 
+async def samir(event):
+    sender = await event.get_sender()
+    SENDER = sender.id
+    text = "Matrix lo ha attaccato \n Guarda questo video: https://youtube.com/shorts/8rxiK3cpu-0?feature=share"
+    await client.send_message(SENDER, text, parse_mode="HTML")
+
+
 
 
 
