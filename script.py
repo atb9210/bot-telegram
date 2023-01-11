@@ -37,6 +37,17 @@ async def time(event):
     await client.send_message(SENDER, text, parse_mode="HTML")
 
 
+# Define the /testiamo command
+@client.on(events.NewMessage(pattern='/(?i)samir')) 
+async def samir(event):
+    sender = await event.get_sender()
+    SENDER = sender.id
+    text = "Ciao \nSamir Zaro! Dai le scarpe di calcetto ad achraf!"
+    await client.send_message(SENDER, text, parse_mode="HTML")
+
+
+
+
 
 ### MAIN
 if __name__ == '__main__':
